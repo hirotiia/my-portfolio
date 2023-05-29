@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { Headline } from '../components/common/headline'
 
 export default function Home() {
   return (
-    <>
-      <div className="relative flex place-items-center">
-        <h1>Aboutページ</h1>
-      </div>
-    </>
+
+    <div>
+      <Headline title="About" />
+    </div>
+
   )
 }
