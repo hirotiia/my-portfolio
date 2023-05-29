@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { Footer } from './components/footer'
+import { Header } from './components/common/header'
+import { Footer } from './components/common/footer'
+import { Links } from './components/common/Links'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        <Header />
+        <main className="flex min-h-screen flex-col items-center justify-between p-24 max-w-5xl mx-auto mx-auto">
           {children}
         </main>
-
+        <Links />
         <Footer />
       </body>
     </html>
