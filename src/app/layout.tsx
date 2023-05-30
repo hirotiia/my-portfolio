@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Header } from './components/common/header'
 import { Footer } from './components/common/footer'
 import { Links } from './components/common/Links'
+import { Headline } from './components/common/headline'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 max-w-5xl mx-auto mx-auto">
+        <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 max-w-5xl mx-auto mx-auto">
           {children}
         </main>
         <Links />
