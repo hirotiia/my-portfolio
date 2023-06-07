@@ -29,6 +29,7 @@ export const Profile = () => {
       <Example 
       {...o[1]}
       fn={hello} 
+      bool
       />
     </div>
   )
