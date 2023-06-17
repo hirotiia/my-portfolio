@@ -1,6 +1,6 @@
 import React from 'react'
 import { Counter } from '../../counter'
-import Modal from '../../modal'
+import { Modal } from '../../modal'
 
 interface o {
     name: string,

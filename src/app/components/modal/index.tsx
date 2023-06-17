@@ -3,12 +3,12 @@
 import React from 'react'
 import { useRef } from 'react'
 
-function Modal() {
+export function Modal():JSX.Element | null {
   const dialogRef: React.MutableRefObject<HTMLDialogElement | null> = useRef(null);
   console.log(dialogRef.current);
 
   if(!dialogRef) {
-    return;
+    return null;
   }
 
   const showModal = ():void => {
@@ -48,4 +48,3 @@ function Modal() {
   )
 }
 
-export default Modal
