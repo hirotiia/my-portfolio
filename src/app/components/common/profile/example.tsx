@@ -1,5 +1,6 @@
 import React from 'react'
 import { Counter } from '../../counter'
+import Modal from '../../modal'
 
 interface o {
     name: string,
@@ -18,6 +19,7 @@ const Example = ({name, age, country, fn, bool=false}:o) => {
       <p>{fn('関数に設定した引数を出力します')}</p>
       <p>{bool ? 'true' : 'false'}</p>
       <Counter />
+      <Modal />
     </div>
   )
 }
