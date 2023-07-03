@@ -16,6 +16,10 @@ module.exports = {
         '54': '.54',
       }
     },
+    screens: {
+      'md': '768px',
+      // => @media (min-width: 960px) { ... }
+    },
   },
   plugins: [],
 }
