@@ -14,7 +14,10 @@ module.exports = {
       },
       opacity: {
         '54': '.54',
-      }
+      },
+      aspectRatio: {
+        '19/6': '1900 / 600',
+      },
     },
     screens: {
       'md': '768px',

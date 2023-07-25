@@ -2,8 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Header } from './components/common/header'
 import { Footer } from './components/common/footer'
-import { Container } from './components/common/container'
-import { Profile } from './components/common/profile'
+import { MainVisual } from './components/common/mv'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,13 +17,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 max-w-5xl mx-auto mx-auto">
-          <Container>
-            <Profile />
-          </Container>
+        <main>
+          {children}
         </main>
         <Footer />
       </body>
